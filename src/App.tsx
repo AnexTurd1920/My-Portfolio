@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar';
+import './stylesheets/App.css'
+import Navbar from "./components/Navbar.tsx";
 
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

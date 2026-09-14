@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #0A0A0F;
+}
+body h1,
+body h2,
+body h3 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+body p {
+  font-weight: 400;
+  line-height: 1.7;
+}/*# sourceMappingURL=index.css.map */

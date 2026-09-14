@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .Language-Icon {
+  background: #8998a2;
+  color: #e7e5e4;
+  border: 2px solid #3a3a40;
+  border-radius: 16px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  display: flex;
+}
+nav .Links-Section {
+  display: flex;
+  justify-content: center;
+}
+nav .Links-Section ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav .Links-Section ul li {
+  list-style: none;
+}
+nav .Links-Section ul li a {
+  color: #777572;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+}
+nav .Links-Section ul li a:hover {
+  color: #e7e5e4;
+}/*# sourceMappingURL=Navbar.css.map */
