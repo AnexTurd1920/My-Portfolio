@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav>
       <section>
-        <button className='Language-Icon'>
+        <button className='Language-Btn Nav-Buttons'>
           <IconLanguage size={24} />
         </button>
       </section>
@@ -19,10 +19,13 @@ function Navbar() {
           <li>
             <a href=''>Skills</a>
           </li>
+          <li>
+            <a href=''>Projects</a>
+          </li>
         </ul>
       </section>
       <section>
-        <button>Let's Talk!</button>
+        <button className='Mail-Button Nav-Buttons'>Let's Talk!</button>
       </section>
     </nav>
   );
