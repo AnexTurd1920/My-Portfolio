@@ -1,4 +1,9 @@
 nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
@@ -14,7 +19,7 @@ nav .Nav-Buttons {
   box-sizing: border-box;
   transition: 100ms ease-in-out;
   min-width: 3.5em;
-  padding: 0.7em;
+  padding: 1.2em;
 }
 nav .Nav-Buttons:hover {
   transform: scale(1.1);
@@ -25,7 +30,7 @@ nav .Links-Section {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0.7em;
+  padding: 1.2em;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -41,9 +46,22 @@ nav .Links-Section ul li {
   list-style: none;
 }
 nav .Links-Section ul li a {
+  position: relative;
   color: #e7e5e4;
-  transition: 200ms ease-in-out;
   text-decoration: none;
+}
+nav .Links-Section ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #e7e5e4;
+  transition: width 200ms ease-in;
+}
+nav .Links-Section ul li a:hover::after, nav .Links-Section ul li a.active::after {
+  width: 100%;
 }
 nav > section {
   display: flex;
