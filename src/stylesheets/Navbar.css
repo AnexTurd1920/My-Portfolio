@@ -8,10 +8,11 @@ nav {
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-around;
+  padding-top: 0.7em;
 }
 nav .Nav-Buttons {
-  background-color: rgba(102, 117, 128, 0.2);
-  color: #e7e5e4;
+  background-color: #565656;
+  color: #dbdbdb;
   border-radius: 6px;
   border: none;
   height: 100%;
@@ -25,7 +26,7 @@ nav .Nav-Buttons:hover {
   transform: scale(1.1);
 }
 nav .Links-Section {
-  background-color: rgba(77, 89, 97, 0.2);
+  background-color: rgba(58, 58, 58, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +48,7 @@ nav .Links-Section ul li {
 }
 nav .Links-Section ul li a {
   position: relative;
-  color: #e7e5e4;
+  color: #dbdbdb;
   text-decoration: none;
 }
 nav .Links-Section ul li a::after {
@@ -57,7 +58,7 @@ nav .Links-Section ul li a::after {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background-color: #e7e5e4;
+  background-color: #dbdbdb;
   transition: width 200ms ease-in;
 }
 nav .Links-Section ul li a:hover::after, nav .Links-Section ul li a.active::after {

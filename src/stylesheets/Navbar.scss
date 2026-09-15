@@ -1,87 +1,4 @@
-// ========================================
-// BACKGROUNDS
-// ========================================
-
-$color-bg: #0a0a0f;
-$color-bg-secondary: rgb(18, 18, 24);
-$color-bg-card: #19191f;
-$color-bg-hover: #232329;
-
-// ========================================
-// TEXT
-// ========================================
-
-$color-text-primary: #e7e5e4;
-$color-text-primary-light: #eeeae8;
-$color-text-secondary: #a8a5a2;
-$color-text-muted: #777572;
-
-// ========================================
-// BRAND — DESATURATED PURPLE
-// ========================================
-
-$color-primary: #6f6878;
-$color-primary-light: #918899;
-$color-primary-dark: #514b58;
-
-// ========================================
-// ACCENT — MUTED BLUE
-// ========================================
-
-$color-accent: #6675808d;
-$color-accent-light: #8998a285;
-$color-accent-dark: #4d59617a;
-
-// ========================================
-// SECONDARY ACCENT — MUTED GREEN
-// ========================================
-
-$color-secondary: #68776f;
-$color-secondary-light: #89978f;
-$color-secondary-dark: #4d5a53;
-
-// ========================================
-// BORDERS
-// ========================================
-
-$color-border: #29292f;
-$color-border-light: #3a3a40;
-
-// ========================================
-// STATUS
-// ========================================
-
-$color-success: #718277;
-$color-warning: #8a806b;
-$color-error: #856f6f;
-
-// ========================================
-// GRADIENTS
-// ========================================
-
-$gradient-primary: linear-gradient(135deg, $color-primary, $color-accent);
-
-$gradient-subtle: linear-gradient(135deg, #17171d, #202127);
-
-// ========================================
-// SHADOWS
-// ========================================
-
-$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
-
-$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
-
-$shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
-
-// ========================================
-// BORDER RADIUS
-// ========================================
-
-$radius-sm: 6px;
-$radius-md: 10px;
-$radius-lg: 16px;
-$radius-xl: 24px;
-$radius-full: 9999px;
+@use "index.scss" as *;
 
 nav {
   position: fixed;
@@ -93,8 +10,9 @@ nav {
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-around;
+  padding-top: 0.7em;
   .Nav-Buttons {
-    background-color: rgba($color-accent, 0.2);
+    background-color: $color-accent;
     color: $color-text-primary;
     border-radius: $radius-sm;
     border: none;
@@ -150,7 +68,7 @@ nav {
       }
     }
   }
-  > section {
+  & > section {
     display: flex;
     align-items: center;
   }

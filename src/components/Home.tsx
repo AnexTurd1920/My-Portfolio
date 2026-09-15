@@ -1,7 +1,7 @@
 import {
-  IconBrandLinkedinFilled,
-  IconBrandInstagramFilled,
-  IconBrandGithubFilled,
+  IconBrandLinkedin,
+  IconBrandGithub, 
+  IconBrandInstagram,
 } from "@tabler/icons-react";
 import "../stylesheets/Home.css";
 
@@ -11,7 +11,7 @@ function Home() {
       <div className='Info-Holder'>
         <section>
           <h3>
-            <span>Hello!</span> Francisco's Here
+            Hello! Francisco's Here
           </h3>
           <h1>
             <span>Full-Stack</span>
@@ -28,12 +28,12 @@ function Home() {
           <button>Download CV</button>
         </section>
         <section className='Icon-Holder'>
-          <IconBrandLinkedinFilled />
-          <IconBrandGithubFilled />
-          <IconBrandInstagramFilled />
+          <IconBrandLinkedin />
+          <IconBrandGithub />
+          <IconBrandInstagram />
         </section>
       </div>
-      <div>
+      <div className="Photo-Holder">
         <svg
           fill='#fff'
           width='800px'

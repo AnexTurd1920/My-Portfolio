@@ -14,9 +14,8 @@
   flex-direction: column;
 }
 .Landing-Info .Info-Holder h1,
-.Landing-Info .Info-Holder h3,
 .Landing-Info .Info-Holder p {
-  color: #e7e5e4;
+  color: #dbdbdb;
   width: 500px;
   text-align: justify;
   letter-spacing: 0px;
@@ -24,7 +23,10 @@
 .Landing-Info .Info-Holder h1 {
   margin: 0;
 }
-.Landing-Info button {
+.Landing-Info .Info-Holder h3 {
+  color: #777572;
+}
+.Landing-Info .Info-Holder button {
   background-color: #565656;
   color: white;
   padding: 0.8em;
@@ -35,22 +37,24 @@
   margin: 25px 0;
   transition: 250ms ease-in-out;
 }
-.Landing-Info button:hover {
+.Landing-Info .Info-Holder button:hover {
   transform: scale(1.09);
   background-color: #757474;
 }
-.Landing-Info svg {
-  max-height: 2em;
-}
-.Landing-Info .Icon-Holder {
+.Landing-Info .Info-Holder .Icon-Holder {
   display: flex;
   flex-flow: row wrap;
   gap: 32px;
-  color: white;
 }
-.Landing-Info .Icon-Holder .Icon-Holder > * {
+.Landing-Info .Info-Holder .Icon-Holder svg {
   cursor: pointer;
+  color: #dbdbdb;
+  transition: 500ms ease;
 }
-.Landing-Info .Icon-Holder .Icon-Holder > *:hover {
-  transform: scale(1.1);
+.Landing-Info .Info-Holder .Icon-Holder svg:hover {
+  color: #e7e7e7;
+  fill: #565656;
+}
+.Landing-Info .Photo-Holder svg {
+  max-height: 25em;
 }/*# sourceMappingURL=Home.css.map */
