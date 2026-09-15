@@ -23,28 +23,28 @@ $color-text-secondary: #a8a5a2;
 $color-text-muted: #777572;
 
 // ========================================
-// BRAND — DESATURATED PURPLE
+// BRAND PRIMARY COLOR — DESATURATED PURPLE
 // ========================================
 
 $color-primary: #7a25c4;
-$color-primary-light: #982ef5;
-$color-primary-dark: 4c177b;
+$color-primary-light: #b866ff;
+$color-primary-dark: #5600a2;
+
+// ========================================
+// BRAND SECONDARY COLOR - AZURE BLUE
+// ========================================
+
+$color-secondary: #1e81f5;
+$color-secondary-light: #4d9fff;
+$color-secondary-dark: #0055c1;
 
 // ========================================
 // ACCENT — MUTED GRAY
 // ========================================
 
-$color-accent: #565656;
-$color-accent-light: #757474;
-$color-accent-dark: #3a3a3a;
-
-// ========================================
-// SECONDARY ACCENT — MUTED GREEN
-// ========================================
-
-$color-secondary: #68776f;
-$color-secondary-light: #89978f;
-$color-secondary-dark: #4d5a53;
+$color-gray: #565656;
+$color-gray-light: #757474;
+$color-gray-dark: #3a3a3a;
 
 // ========================================
 // BORDERS
@@ -65,7 +65,7 @@ $color-error: #856f6f;
 // GRADIENTS
 // ========================================
 
-$gradient-primary: linear-gradient(135deg, $color-primary, $color-accent);
+$gradient-primary: linear-gradient(135deg, $color-primary, $color-secondary);
 
 $gradient-subtle: linear-gradient(135deg, #17171d, #202127);
 

@@ -1,4 +1,4 @@
-@use "index.scss" as *;
+@use "MainStyles.scss" as *;
 
 nav {
   position: fixed;
@@ -12,7 +12,7 @@ nav {
   justify-content: space-around;
   padding-top: 0.7em;
   .Nav-Buttons {
-    background-color: $color-accent;
+    background-color: $color-secondary;
     color: $color-text-primary;
     border-radius: $radius-sm;
     border: none;
@@ -27,7 +27,7 @@ nav {
     }
   }
   .Links-Section {
-    background-color: rgba($color-accent-dark, 0.2);
+    background-color: rgba($color-secondary-dark, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;

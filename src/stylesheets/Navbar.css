@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 nav {
   position: fixed;
   z-index: 2;
@@ -11,7 +12,7 @@ nav {
   padding-top: 0.7em;
 }
 nav .Nav-Buttons {
-  background-color: #565656;
+  background-color: #1e81f5;
   color: #dbdbdb;
   border-radius: 6px;
   border: none;
@@ -26,7 +27,7 @@ nav .Nav-Buttons:hover {
   transform: scale(1.1);
 }
 nav .Links-Section {
-  background-color: rgba(58, 58, 58, 0.2);
+  background-color: rgba(0, 85, 193, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;

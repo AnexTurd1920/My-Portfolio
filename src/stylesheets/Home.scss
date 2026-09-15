@@ -1,4 +1,4 @@
-@use "./MainStyles.css" as *;
+@use "./MainStyles.scss" as *;
 
 .Landing-Info {
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: space-around;
   flex: 1;
   span {
-    color: $color-primary-light;
+    color: $color-secondary-light;
     font-weight: bolder;
   }
   div {
@@ -29,7 +29,7 @@
       color: $color-text-muted;
     }
     button {
-      background-color: $color-accent;
+      background-color: $color-secondary;
       color: white;
       padding: 0.8em;
       width: 30%;
@@ -40,7 +40,7 @@
       transition: 250ms ease-in-out;
       &:hover {
         transform: scale(1.09);
-        background-color: $color-accent-light;
+        background-color: $color-secondary-light;
       }
     }
     .Icon-Holder {
@@ -53,7 +53,7 @@
         transition: 500ms ease;
         &:hover {
           color: $color-text-primary-light;
-          fill: $color-accent;
+          fill: $color-secondary;
         }
       }
     }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 .Landing-Info {
   display: flex;
   flex-flow: row nowrap;
@@ -6,7 +7,7 @@
   flex: 1;
 }
 .Landing-Info span {
-  color: #982ef5;
+  color: #4d9fff;
   font-weight: bolder;
 }
 .Landing-Info div {
@@ -27,7 +28,7 @@
   color: #777572;
 }
 .Landing-Info .Info-Holder button {
-  background-color: #565656;
+  background-color: #1e81f5;
   color: white;
   padding: 0.8em;
   width: 30%;
@@ -39,7 +40,7 @@
 }
 .Landing-Info .Info-Holder button:hover {
   transform: scale(1.09);
-  background-color: #757474;
+  background-color: #4d9fff;
 }
 .Landing-Info .Info-Holder .Icon-Holder {
   display: flex;
@@ -53,7 +54,7 @@
 }
 .Landing-Info .Info-Holder .Icon-Holder svg:hover {
   color: #e7e7e7;
-  fill: #565656;
+  fill: #1e81f5;
 }
 .Landing-Info .Photo-Holder svg {
   max-height: 25em;
