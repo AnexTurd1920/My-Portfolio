@@ -119,6 +119,9 @@
   resize: vertical;
   transition: 150ms ease;
 }
+.Contact-Section .Contact-Form .Form-Field input::-moz-placeholder, .Contact-Section .Contact-Form .Form-Field textarea::-moz-placeholder {
+  color: #777572;
+}
 .Contact-Section .Contact-Form .Form-Field input::placeholder,
 .Contact-Section .Contact-Form .Form-Field textarea::placeholder {
   color: #777572;
@@ -151,4 +154,4 @@
   .Contact-Section .Contact-Form .Form-Row {
     grid-template-columns: 1fr;
   }
-}
+}/*# sourceMappingURL=Contact.css.map */

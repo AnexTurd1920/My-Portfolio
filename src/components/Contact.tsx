@@ -33,7 +33,7 @@ function Contact() {
             </span>
             <div>
               <h4>Email</h4>
-              <p>francisco@example.com</p>
+              <p>franmesacev@outlook.com</p>
             </div>
           </div>
           <div className="Contact-Item">
@@ -42,7 +42,7 @@ function Contact() {
             </span>
             <div>
               <h4>Phone</h4>
-              <p>+1 (000) 000-0000</p>
+              <p>+1 (849) 362-8120</p>
             </div>
           </div>
           <div className="Contact-Item">

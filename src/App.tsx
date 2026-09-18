@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import "./stylesheets/App.css";
+
 import Navbar from "./components/Navbar.tsx";
 import Home from "./components/Home.tsx";
 import Services from "./components/Services.tsx";
@@ -9,9 +11,33 @@ import Contact from "./components/Contact.tsx";
 import Footer from "./components/Footer.tsx";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <Navbar />
+      <Navbar activeSection={activeSection} />
+
       <Home />
       <Services />
       <About />
