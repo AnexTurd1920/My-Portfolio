@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+.Landing-Info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 110px;
+  padding: 40px 6%;
+  justify-content: space-between;
+  gap: 40px;
+  flex: 1;
+  box-sizing: border-box;
+}
+.Landing-Info span {
+  color: #4d9fff;
+  font-weight: bolder;
+}
+.Landing-Info .Info-Holder {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+}
+.Landing-Info .Info-Holder h1,
+.Landing-Info .Info-Holder p {
+  color: #a8a5a2;
+  text-align: left;
+  letter-spacing: 0px;
+}
+.Landing-Info .Info-Holder h1 {
+  margin: 0;
+  font-size: 2.6rem;
+}
+.Landing-Info .Info-Holder h3 {
+  color: #777572;
+  margin: 0 0 6px 0;
+  font-weight: 500;
+}
+.Landing-Info .Info-Holder p {
+  line-height: 1.8;
+}
+.Landing-Info .Info-Holder button {
+  background-color: #1e81f5;
+  color: white;
+  padding: 0.9em 1.8em;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: 250ms ease-in-out;
+}
+.Landing-Info .Info-Holder button:hover {
+  transform: scale(1.06);
+  background-color: #4d9fff;
+}
+.Landing-Info .Info-Holder .Icon-Holder {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+.Landing-Info .Info-Holder .Icon-Holder a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #3a3a40;
+  color: #a8a5a2;
+  transition: 200ms ease;
+}
+.Landing-Info .Info-Holder .Icon-Holder a:hover {
+  color: #4d9fff;
+  border-color: #1e81f5;
+}
+.Landing-Info .Info-Holder .Icon-Holder svg {
+  width: 20px;
+  height: 20px;
+}
+.Landing-Info .Photo-Holder {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.Landing-Info .Photo-Holder .Photo-Frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 380px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #17171d, #202127);
+  border: 1px solid #29292f;
+  color: #777572;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+}
+.Landing-Info .Photo-Holder .Photo-Frame svg {
+  width: 45%;
+  height: 45%;
+}
+
+@media (max-width: 900px) {
+  .Landing-Info {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .Landing-Info .Info-Holder {
+    max-width: 100%;
+    align-items: center;
+  }
+  .Landing-Info .Info-Holder h1,
+  .Landing-Info .Info-Holder p {
+    text-align: center;
+  }
+  .Landing-Info .Photo-Holder .Photo-Frame {
+    width: 240px;
+    height: 280px;
+  }
+}

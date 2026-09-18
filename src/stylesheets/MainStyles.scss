@@ -1,0 +1,82 @@
+// ========================================
+// FONTS
+// ========================================
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+// ========================================
+// BACKGROUNDS
+// ========================================
+
+$color-bg: #0a0a0f;
+$color-bg-primary: rgb(18, 18, 24);
+$color-bg-card: #19191f;
+$color-bg-hover: #232329;
+
+// ========================================
+// TEXT
+// ========================================
+
+$color-text-primary: #dbdbdb;
+$color-text-primary-light: #e7e7e7;
+$color-text-primary: #a8a5a2;
+$color-text-muted: #777572;
+
+// ========================================
+// BRAND primary COLOR - AZURE BLUE
+// ========================================
+
+$color-primary: #1e81f5;
+$color-primary-light: #4d9fff;
+$color-primary-dark: #0055c1;
+
+// ========================================
+// ACCENT — MUTED GRAY
+// ========================================
+
+$color-gray: #565656;
+$color-gray-light: #757474;
+$color-gray-dark: #3a3a3a;
+
+// ========================================
+// BORDERS
+// ========================================
+
+$color-border: #29292f;
+$color-border-light: #3a3a40;
+
+// ========================================
+// STATUS
+// ========================================
+
+$color-success: #718277;
+$color-warning: #8a806b;
+$color-error: #856f6f;
+
+// ========================================
+// GRADIENTS
+// ========================================
+
+$gradient-primary: linear-gradient(135deg, $color-primary, $color-primary);
+
+$gradient-subtle: linear-gradient(135deg, #17171d, #202127);
+
+// ========================================
+// SHADOWS
+// ========================================
+
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+$shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
+
+// ========================================
+// BORDER RADIUS
+// ========================================
+
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-full: 9999px;

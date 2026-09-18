@@ -1,0 +1,87 @@
+@use "./MainStyles.scss" as *;
+
+.About-Section {
+  padding: 60px 6%;
+  text-align: center;
+
+  h2 {
+    color: $color-text-primary-light;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+
+  .About-Text {
+    color: $color-text-muted;
+    max-width: 760px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+  }
+
+  .Approach-Title {
+    color: $color-text-primary-light;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .Approach-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto 48px;
+  }
+
+  .Approach-Card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: $color-bg-card;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    padding: 18px 20px;
+    color: $color-text-primary;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .Approach-Number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    border-radius: $radius-sm;
+    background-color: $color-bg-hover;
+    border: 1px solid $color-border-light;
+    color: $color-text-primary-light;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  .Stats-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .Stat-Card {
+    h3 {
+      color: $color-text-primary-light;
+      font-size: 2rem;
+      margin: 0 0 6px 0;
+    }
+    p {
+      color: $color-text-muted;
+      font-size: 0.85rem;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .About-Section .Approach-Grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,73 @@
+@use "./MainStyles.scss" as *;
+
+.Skills-Section {
+  padding: 60px 6% 120px;
+  text-align: center;
+
+  h2 {
+    color: $color-text-primary-light;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .Section-Subtitle {
+    color: $color-text-muted;
+    font-weight: 600;
+    margin-bottom: 48px;
+  }
+
+  .Skills-Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .Skill-Card {
+    text-align: left;
+    background-color: $color-bg-card;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    padding: 22px;
+    transition: 200ms ease;
+    &:hover {
+      border-color: $color-border-light;
+      background-color: $color-bg-hover;
+    }
+
+    h3 {
+      color: $color-text-primary-light;
+      font-size: 1.05rem;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  .Tag-List {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+
+  .Tag {
+    background-color: $color-bg-hover;
+    border: 1px solid $color-border-light;
+    color: $color-text-primary;
+    border-radius: $radius-sm;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Skills-Section .Skills-Grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .Skills-Section .Skills-Grid {
+    grid-template-columns: 1fr;
+  }
+}

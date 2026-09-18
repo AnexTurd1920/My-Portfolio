@@ -1,0 +1,125 @@
+@use "./MainStyles.scss" as *;
+
+.Landing-Info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 110px;
+  padding: 40px 6%;
+  justify-content: space-between;
+  gap: 40px;
+  flex: 1;
+  box-sizing: border-box;
+
+  span {
+    color: $color-primary-light;
+    font-weight: bolder;
+  }
+
+  .Info-Holder {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+
+    h1,
+    p {
+      color: $color-text-primary;
+      text-align: left;
+      letter-spacing: 0px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+    h3 {
+      color: $color-text-muted;
+      margin: 0 0 6px 0;
+      font-weight: 500;
+    }
+    p {
+      line-height: 1.8;
+    }
+    button {
+      background-color: $color-primary;
+      color: white;
+      padding: 0.9em 1.8em;
+      border-radius: $radius-sm;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      margin: 20px 0;
+      transition: 250ms ease-in-out;
+      &:hover {
+        transform: scale(1.06);
+        background-color: $color-primary-light;
+      }
+    }
+    .Icon-Holder {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 16px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: $radius-sm;
+        border: 1px solid $color-border-light;
+        color: $color-text-primary;
+        transition: 200ms ease;
+        &:hover {
+          color: $color-primary-light;
+          border-color: $color-primary;
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .Photo-Holder {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .Photo-Frame {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 380px;
+      border-radius: $radius-lg;
+      background: $gradient-subtle;
+      border: 1px solid $color-border;
+      color: $color-text-muted;
+      box-shadow: $shadow-lg;
+
+      svg {
+        width: 45%;
+        height: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Landing-Info {
+    flex-direction: column-reverse;
+    text-align: center;
+    .Info-Holder {
+      max-width: 100%;
+      align-items: center;
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+    .Photo-Holder .Photo-Frame {
+      width: 240px;
+      height: 280px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+.Projects-Section {
+  padding: 60px 6%;
+  text-align: center;
+}
+.Projects-Section h2 {
+  color: #e7e7e7;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.Projects-Section .Section-Subtitle {
+  color: #777572;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+.Projects-Section .Projects-Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.Projects-Section .Project-Card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: #19191f;
+  border: 1px solid #29292f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 200ms ease;
+}
+.Projects-Section .Project-Card:hover {
+  border-color: #3a3a40;
+  background-color: #232329;
+  transform: translateY(-4px);
+}
+.Projects-Section .Project-Thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background: linear-gradient(135deg, #17171d, #202127);
+  border-bottom: 1px solid #29292f;
+}
+.Projects-Section .Project-Thumb span {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #777572;
+}
+.Projects-Section .Project-Body {
+  padding: 24px;
+}
+.Projects-Section .Project-Body h3 {
+  color: #e7e7e7;
+  font-size: 1.15rem;
+  margin: 0 0 10px 0;
+}
+.Projects-Section .Project-Body p {
+  color: #777572;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0 0 18px 0;
+}
+.Projects-Section .Tag-List {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.Projects-Section .Tag {
+  background-color: #232329;
+  border: 1px solid #3a3a40;
+  color: #a8a5a2;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+.Projects-Section .Project-Links {
+  display: flex;
+  gap: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #29292f;
+}
+.Projects-Section .Project-Links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #a8a5a2;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 200ms ease;
+}
+.Projects-Section .Project-Links a:hover {
+  color: #4d9fff;
+}
+
+@media (max-width: 700px) {
+  .Projects-Section .Projects-Grid {
+    grid-template-columns: 1fr;
+  }
+}
