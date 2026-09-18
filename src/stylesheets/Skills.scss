@@ -31,15 +31,18 @@
     border-radius: $radius-md;
     padding: 22px;
     transition: 200ms ease;
+    h3 {
+      color: $color-text-muted;
+      font-size: 1.05rem;
+      margin: 0 0 16px 0;
+      transition: 200ms ease;
+    }
     &:hover {
       border-color: $color-border-light;
       background-color: $color-bg-hover;
     }
-
-    h3 {
-      color: $color-text-primary-light;
-      font-size: 1.05rem;
-      margin: 0 0 16px 0;
+    &:hover h3 {
+      color: $color-primary-light;
     }
   }
 

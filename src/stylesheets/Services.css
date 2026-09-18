@@ -3,11 +3,6 @@
   padding: 100px 6% 60px;
   text-align: center;
 }
-.Services-Section h2 {
-  color: #e7e7e7;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
 .Services-Section .Section-Subtitle {
   color: #777572;
   font-weight: 600;
@@ -37,10 +32,14 @@
   background-color: #232329;
 }
 .Services-Section .Service-Card h3 {
-  color: #e7e7e7;
+  color: #777572;
   font-size: 1.15rem;
   margin: 0 0 12px 0;
   line-height: 1.3;
+  transition: 200ms ease;
+}
+.Services-Section .Service-Card:hover h3 {
+  color: #4d9fff;
 }
 .Services-Section .Service-Card p {
   color: #777572;

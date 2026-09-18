@@ -35,6 +35,9 @@
   background-color: #232329;
   transform: translateY(-4px);
 }
+.Projects-Section .Project-Card:hover h3 {
+  color: #4d9fff;
+}
 .Projects-Section .Project-Thumb {
   display: flex;
   align-items: center;
@@ -52,9 +55,10 @@
   padding: 24px;
 }
 .Projects-Section .Project-Body h3 {
-  color: #e7e7e7;
+  color: #777572;
   font-size: 1.15rem;
   margin: 0 0 10px 0;
+  transition: 200ms ease;
 }
 .Projects-Section .Project-Body p {
   color: #777572;

@@ -28,14 +28,18 @@
   padding: 22px;
   transition: 200ms ease;
 }
+.Skills-Section .Skill-Card h3 {
+  color: #777572;
+  font-size: 1.05rem;
+  margin: 0 0 16px 0;
+  transition: 200ms ease;
+}
 .Skills-Section .Skill-Card:hover {
   border-color: #3a3a40;
   background-color: #232329;
 }
-.Skills-Section .Skill-Card h3 {
-  color: #e7e7e7;
-  font-size: 1.05rem;
-  margin: 0 0 16px 0;
+.Skills-Section .Skill-Card:hover h3 {
+  color: #4d9fff;
 }
 .Skills-Section .Tag-List {
   display: flex;

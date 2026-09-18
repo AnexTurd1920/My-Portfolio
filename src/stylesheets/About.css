@@ -3,11 +3,6 @@
   padding: 60px 6%;
   text-align: center;
 }
-.About-Section h2 {
-  color: #e7e7e7;
-  font-size: 2.2rem;
-  margin-bottom: 24px;
-}
 .About-Section .About-Text {
   color: #777572;
   max-width: 760px;
@@ -15,7 +10,7 @@
   line-height: 1.8;
 }
 .About-Section .Approach-Title {
-  color: #e7e7e7;
+  color: #4d9fff;
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
@@ -59,7 +54,7 @@
   margin: 0 auto;
 }
 .About-Section .Stat-Card h3 {
-  color: #e7e7e7;
+  color: #4d9fff;
   font-size: 2rem;
   margin: 0 0 6px 0;
 }

@@ -49,10 +49,10 @@ function Footer() {
         <div className='Footer-Column'>
           <h4>Contact Info</h4>
           <span className='Footer-Contact-Item'>
-            <IconMail size={16} /> francisco@example.com
+            <IconMail size={16} /> franmesacev@outlook.com
           </span>
           <span className='Footer-Contact-Item'>
-            <IconPhone size={16} /> +1 (000) 000-0000
+            <IconPhone size={16} /> +1 (849) 362-8120
           </span>
           <span className='Footer-Contact-Item'>
             <IconMapPin size={16} /> Santo Domingo, Dominican Republic

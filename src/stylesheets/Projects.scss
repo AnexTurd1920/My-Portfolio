@@ -38,6 +38,10 @@
       background-color: $color-bg-hover;
       transform: translateY(-4px);
     }
+
+    &:hover h3 {
+      color: $color-primary-light;
+    }
   }
 
   .Project-Thumb {
@@ -59,9 +63,10 @@
     padding: 24px;
 
     h3 {
-      color: $color-text-primary-light;
+      color: $color-text-muted;
       font-size: 1.15rem;
       margin: 0 0 10px 0;
+      transition: 200ms ease;
     }
 
     p {
