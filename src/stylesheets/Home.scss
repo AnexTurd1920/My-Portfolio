@@ -92,14 +92,16 @@
       width: 320px;
       height: 380px;
       border-radius: $radius-lg;
+      overflow: hidden;
       background: $gradient-subtle;
       border: 1px solid $color-border;
       color: $color-text-muted;
       box-shadow: $shadow-lg;
 
-      svg {
-        width: 45%;
-        height: 45%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
