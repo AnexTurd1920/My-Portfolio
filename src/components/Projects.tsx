@@ -13,7 +13,7 @@ const projects = {
     codeUrl: "#",
   },
   {
-    title: "Elysium",
+    title: "Wexora",
     description:
       "A communication platform inspired by Discord, enhanced with additional tools and integrated AI to provide a more complete and intelligent communication experience.",
     tags: ["React", "TypeScript", "WebSockets"],
@@ -21,7 +21,7 @@ const projects = {
     codeUrl: "#",
   },
   {
-    title: "Wexora",
+    title: "Elysium",
     description:
       "An LMS platform with integrated AI, designed to improve academic communication and collaboration between teachers and students.",
     tags: ["Next.js", "Electron", "MongoDB"],
@@ -46,14 +46,14 @@ const projects = {
       codeUrl: "#",
     },
     {
-      title: "Elysium",
+      title: "Wexora",
       description: "Plataforma de comunicación inspirada en Discord, con herramientas adicionales e inteligencia artificial integrada para ofrecer una experiencia más completa e inteligente.",
       tags: ["React", "TypeScript", "WebSockets"],
       liveUrl: "#",
       codeUrl: "#",
     },
     {
-      title: "Wexora",
+      title: "Elysium",
       description: "Plataforma LMS con inteligencia artificial integrada, diseñada para mejorar la comunicación y colaboración académica entre docentes y estudiantes.",
       tags: ["Next.js", "Electron", "MongoDB"],
       liveUrl: "#",

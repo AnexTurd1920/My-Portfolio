@@ -32,7 +32,14 @@ function Home() {
           </p>
         </section>
         <section>
-          <button>{spanish ? "Descargar CV" : "Download CV"}</button>
+          <a
+            className='CV-Button'
+            href={`${import.meta.env.BASE_URL}Francisco%C2%B4s%20CV.pdf`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {spanish ? "Descargar CV" : "Download CV"}
+          </a>
         </section>
         <section className='Icon-Holder'>
           <a

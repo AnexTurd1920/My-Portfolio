@@ -39,7 +39,9 @@
     p {
       line-height: 1.8;
     }
-    button {
+    button,
+    .CV-Button {
+      display: inline-block;
       background-color: $color-primary;
       color: white;
       padding: 0.9em 1.8em;
@@ -48,6 +50,7 @@
       font-weight: 700;
       cursor: pointer;
       margin: 20px 0;
+      text-decoration: none;
       transition: 250ms ease-in-out;
       &:hover {
         transform: scale(1.06);

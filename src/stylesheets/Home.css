@@ -37,7 +37,9 @@
 .Landing-Info .Info-Holder p {
   line-height: 1.8;
 }
-.Landing-Info .Info-Holder button {
+.Landing-Info .Info-Holder button,
+.Landing-Info .Info-Holder .CV-Button {
+  display: inline-block;
   background-color: #1e81f5;
   color: white;
   padding: 0.9em 1.8em;
@@ -46,9 +48,11 @@
   font-weight: 700;
   cursor: pointer;
   margin: 20px 0;
+  text-decoration: none;
   transition: 250ms ease-in-out;
 }
-.Landing-Info .Info-Holder button:hover {
+.Landing-Info .Info-Holder button:hover,
+.Landing-Info .Info-Holder .CV-Button:hover {
   transform: scale(1.06);
   background-color: #4d9fff;
 }
