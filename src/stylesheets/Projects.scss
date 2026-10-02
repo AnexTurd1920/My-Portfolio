@@ -5,7 +5,6 @@
   text-align: center;
 
   h2 {
-    color: $color-text-primary-light;
     font-size: 2.2rem;
     margin-bottom: 10px;
   }
@@ -31,9 +30,10 @@
     background-color: $color-bg-card;
     border: 1px solid $color-border;
     border-radius: $radius-md;
-    overflow: hidden;
     transition: 200ms ease;
     &:hover {
+      position: relative;
+      z-index: 1;
       border-color: $color-border-light;
       background-color: $color-bg-hover;
       transform: translateY(-4px);
@@ -49,8 +49,10 @@
     align-items: center;
     justify-content: center;
     height: 160px;
+    overflow: hidden;
     background: $gradient-subtle;
     border-bottom: 1px solid $color-border;
+    border-radius: 9px 9px 0 0;
 
     span {
       font-size: 2.6rem;
@@ -101,6 +103,7 @@
     border-top: 1px solid $color-border;
 
     a {
+      position: relative;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -111,6 +114,49 @@
       transition: 200ms ease;
       &:hover {
         color: $color-primary-light;
+      }
+
+      &::after {
+        position: absolute;
+        z-index: 2;
+        bottom: calc(100% + 10px);
+        left: 0;
+        width: max-content;
+        max-width: min(240px, calc(100vw - 40px));
+        padding: 8px 10px;
+        border: 1px solid $color-border-light;
+        border-radius: $radius-sm;
+        background-color: $color-bg;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        color: $color-text-primary-light;
+        content: attr(data-tooltip);
+        font-size: 0.78rem;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+        white-space: normal;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(4px);
+        transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+        pointer-events: none;
+      }
+
+      &:last-child::after {
+        right: 0;
+        left: auto;
+      }
+
+      &:hover::after,
+      &:focus-visible::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-primary-light;
+        outline-offset: 4px;
       }
     }
   }

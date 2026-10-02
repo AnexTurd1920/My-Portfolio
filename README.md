@@ -1,5 +1,25 @@
 # React + TypeScript + Vite
 
+## Deploy to GitHub Pages
+
+The repository includes a GitHub Actions workflow that builds and deploys the
+site whenever code is pushed to `development`. To enable it, open the GitHub
+repository's **Settings → Pages** and select **GitHub Actions** as the build and
+deployment source. You can also start a deployment from **Actions → Deploy
+static content to Pages → Run workflow**.
+
+Vite's base path is set to `/My-Portfolio/`, matching this repository name.
+
+## Contact form emails
+
+The contact form sends messages to `franmesacev@outlook.com` through FormSubmit's
+AJAX endpoint. It validates that the name, email, and message are filled in and
+that the email has a valid format; it does not verify access to the sender's
+mailbox.
+
+On the first submission, FormSubmit may send a confirmation email to the
+recipient address. Confirm it to activate delivery.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

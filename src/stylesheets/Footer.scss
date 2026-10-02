@@ -15,27 +15,6 @@ footer {
     border-bottom: 1px solid $color-border;
   }
 
-  .Logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: $radius-full;
-    background: $gradient-subtle;
-    border: 1px solid $color-border-light;
-    color: $color-text-primary-light;
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-decoration: none;
-    margin-bottom: 16px;
-    transition: 200ms ease-in-out;
-    &:hover {
-      border-color: $color-primary;
-      color: $color-primary-light;
-    }
-  }
-
   .Footer-Brand {
     p {
       color: $color-text-muted;

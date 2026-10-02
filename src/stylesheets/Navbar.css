@@ -12,26 +12,6 @@ nav {
   padding: 1.2em 4%;
   box-sizing: border-box;
 }
-nav .Logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 9999px;
-  background: linear-gradient(135deg, #17171d, #202127);
-  border: 1px solid #3a3a40;
-  color: #e7e7e7;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0;
-  text-decoration: none;
-  transition: 200ms ease-in-out;
-}
-nav .Logo:hover, nav .Logo:focus-visible {
-  border-color: #1e81f5;
-  color: #4d9fff;
-}
 nav .Nav-Buttons {
   background-color: rgba(0, 85, 193, 0.2);
   color: #a8a5a2;
@@ -43,11 +23,41 @@ nav .Nav-Buttons {
   transition: 100ms ease-in-out;
   min-width: 3.5em;
   padding: 1em 1.4em;
+  white-space: nowrap;
   cursor: pointer;
 }
 nav .Nav-Buttons:hover, nav .Nav-Buttons:focus-visible {
   transform: scale(1.06);
   background-color: rgba(30, 129, 245, 0.35);
+}
+nav .Language-Switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #29292f;
+  border-radius: 9999px;
+  background-color: #19191f;
+}
+nav .Language-Switch button {
+  min-width: 34px;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  color: #a8a5a2;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+nav .Language-Switch button[aria-pressed=true] {
+  background-color: rgba(30, 129, 245, 0.3);
+  color: #e7e7e7;
+}
+nav .Language-Switch button:focus-visible {
+  outline: 2px solid #4d9fff;
+  outline-offset: 2px;
 }
 nav .Links-Section {
   background-color: #19191f;
@@ -105,10 +115,48 @@ nav > section {
 }
 
 @media (max-width: 860px) {
+  nav .Nav-Buttons {
+    padding: 0.8em 1em;
+  }
   nav .Links-Section ul {
     gap: 14px;
   }
   nav .Links-Section ul li a {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    padding: 0.8em 4%;
+  }
+  nav .Links-Section {
+    order: 1;
+    flex: 1 0 100%;
+    padding: 0.7em 1em;
+  }
+  nav .Links-Section ul {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+  nav .Language-Switch {
+    order: 2;
+  }
+  nav > section:last-child {
+    order: 3;
+    margin-left: auto;
+  }
+  nav .Nav-Buttons {
+    padding: 0.7em 0.9em;
+  }
+}
+@media (max-width: 420px) {
+  nav .Nav-Buttons {
+    padding: 0.65em 0.75em;
+    font-size: 0.82rem;
+  }
+  nav .Links-Section ul {
+    gap: 9px 12px;
   }
 }/*# sourceMappingURL=Navbar.css.map */

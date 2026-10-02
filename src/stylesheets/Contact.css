@@ -126,6 +126,23 @@
   outline: none;
   border-color: #1e81f5;
 }
+.Contact-Section .Contact-Form .Form-Field input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #232329 inset;
+  -webkit-text-fill-color: #e7e7e7;
+  caret-color: #e7e7e7;
+  -webkit-transition: background-color 9999s ease-out 0s;
+  transition: background-color 9999s ease-out 0s;
+}
+.Contact-Section .Contact-Form .Form-Field input:-webkit-autofill,
+.Contact-Section .Contact-Form .Form-Field input:-webkit-autofill:hover,
+.Contact-Section .Contact-Form .Form-Field input:-webkit-autofill:focus,
+.Contact-Section .Contact-Form .Form-Field input:autofill {
+  box-shadow: 0 0 0 1000px #232329 inset;
+  -webkit-text-fill-color: #e7e7e7;
+  caret-color: #e7e7e7;
+  -webkit-transition: background-color 9999s ease-out 0s;
+  transition: background-color 9999s ease-out 0s;
+}
 .Contact-Section .Contact-Form button {
   align-self: flex-start;
   background-color: #1e81f5;
@@ -140,6 +157,21 @@
 .Contact-Section .Contact-Form button:hover {
   transform: scale(1.05);
   background-color: #4d9fff;
+}
+.Contact-Section .Contact-Form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+.Contact-Section .Contact-Form .Contact-Form-Status {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.Contact-Section .Contact-Form .Contact-Form-Status.sent {
+  color: #65c38c;
+}
+.Contact-Section .Contact-Form .Contact-Form-Status.error {
+  color: #ff7b72;
 }
 
 @media (max-width: 800px) {

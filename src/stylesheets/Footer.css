@@ -13,26 +13,6 @@ footer .Footer-Grid {
   padding-bottom: 28px;
   border-bottom: 1px solid #29292f;
 }
-footer .Logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 9999px;
-  background: linear-gradient(135deg, #17171d, #202127);
-  border: 1px solid #3a3a40;
-  color: #e7e7e7;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-decoration: none;
-  margin-bottom: 16px;
-  transition: 200ms ease-in-out;
-}
-footer .Logo:hover {
-  border-color: #1e81f5;
-  color: #4d9fff;
-}
 footer .Footer-Brand p {
   color: #777572;
   font-size: 0.88rem;

@@ -1,15 +1,35 @@
 import "../stylesheets/Navbar.css";
+import { useLanguage } from "../LanguageContext";
 
 interface NavbarProps {
   activeSection: string;
 }
 
 function Navbar({ activeSection }: NavbarProps) {
+  const { language, setLanguage } = useLanguage();
+  const spanish = language === "es";
+
   return (
     <nav>
-      <a href='#home' className='Logo'>
-        EN
-      </a>
+      <section
+        className='Language-Switch'
+        aria-label={spanish ? "Idioma" : "Language"}
+      >
+        <button
+          type='button'
+          aria-pressed={language === "en"}
+          onClick={() => setLanguage("en")}
+        >
+          EN
+        </button>
+        <button
+          type='button'
+          aria-pressed={language === "es"}
+          onClick={() => setLanguage("es")}
+        >
+          ES
+        </button>
+      </section>
       <section className='Links-Section'>
         <ul>
           <li>
@@ -17,7 +37,7 @@ function Navbar({ activeSection }: NavbarProps) {
               href='#home'
               className={activeSection === "home" ? "active" : ""}
             >
-              Home
+              {spanish ? "Inicio" : "Home"}
             </a>
           </li>
           <li>
@@ -25,7 +45,7 @@ function Navbar({ activeSection }: NavbarProps) {
               href='#services'
               className={activeSection === "services" ? "active" : ""}
             >
-              Services
+              {spanish ? "Servicios" : "Services"}
             </a>
           </li>
           <li>
@@ -33,7 +53,7 @@ function Navbar({ activeSection }: NavbarProps) {
               href='#about'
               className={activeSection === "about" ? "active" : ""}
             >
-              About
+              {spanish ? "Sobre mí" : "About"}
             </a>
           </li>
           <li>
@@ -41,7 +61,7 @@ function Navbar({ activeSection }: NavbarProps) {
               href='#skills'
               className={activeSection === "skills" ? "active" : ""}
             >
-              Skills
+              {spanish ? "Habilidades" : "Skills"}
             </a>
           </li>
           <li>
@@ -49,13 +69,15 @@ function Navbar({ activeSection }: NavbarProps) {
               href='#projects'
               className={activeSection === "projects" ? "active" : ""}
             >
-              Projects
+              {spanish ? "Proyectos" : "Projects"}
             </a>
           </li>
         </ul>
       </section>
       <section>
-        <a href="#contact" className=' Nav-Buttons'>Let's Talk!</a>
+        <a href='#contact' className='Nav-Buttons'>
+          {spanish ? "Hablemos" : "Let's Talk!"}
+        </a>
       </section>
     </nav>
   );

@@ -1,7 +1,9 @@
 import { IconExternalLink, IconBrandGithub } from "@tabler/icons-react";
 import "../stylesheets/Projects.css";
+import { useLanguage } from "../LanguageContext";
 
-const projects = [
+const projects = {
+  en: [
   {
     title: "LightSense",
     description:
@@ -34,18 +36,52 @@ const projects = [
     liveUrl: "#",
     codeUrl: "#",
   },
-];
+  ],
+  es: [
+    {
+      title: "LightSense",
+      description: "Plataforma de energía renovable que integra soluciones sostenibles con monitoreo inteligente para gestionar y hacer seguimiento a la generación y el consumo de energía.",
+      tags: ["React", "Node.js", "PostgreSQL"],
+      liveUrl: "#",
+      codeUrl: "#",
+    },
+    {
+      title: "Elysium",
+      description: "Plataforma de comunicación inspirada en Discord, con herramientas adicionales e inteligencia artificial integrada para ofrecer una experiencia más completa e inteligente.",
+      tags: ["React", "TypeScript", "WebSockets"],
+      liveUrl: "#",
+      codeUrl: "#",
+    },
+    {
+      title: "Wexora",
+      description: "Plataforma LMS con inteligencia artificial integrada, diseñada para mejorar la comunicación y colaboración académica entre docentes y estudiantes.",
+      tags: ["Next.js", "Electron", "MongoDB"],
+      liveUrl: "#",
+      codeUrl: "#",
+    },
+    {
+      title: "GYK Studios",
+      description: "Equipo multidisciplinario de desarrollo, ciberseguridad y diseño que ofrece servicios digitales profesionales y soluciones freelance adaptadas a cada cliente.",
+      tags: ["React", ".NET", "Express"],
+      liveUrl: "#",
+      codeUrl: "#",
+    },
+  ],
+};
 
 function Projects() {
+  const { language } = useLanguage();
+  const spanish = language === "es";
+
   return (
     <section id='projects' className='Projects-Section'>
-      <h2>Projects</h2>
+      <h2>{spanish ? "Proyectos" : "Projects"}</h2>
       <p className='Section-Subtitle'>
-        A selection of things I've built recently
+        {spanish ? "Una selección de proyectos que he creado recientemente" : "A selection of things I've built recently"}
       </p>
 
       <div className='Projects-Grid'>
-        {projects.map((project) => (
+        {projects[language].map((project) => (
           <div className='Project-Card' key={project.title}>
             <div className='Project-Thumb'>
               <span>{project.title.charAt(0)}</span>
@@ -61,13 +97,23 @@ function Projects() {
                 ))}
               </div>
               <div className='Project-Links'>
-                <a href={project.liveUrl} aria-label='Live demo'>
+                <a
+                  href={project.liveUrl}
+                  onClick={(event) => event.preventDefault()}
+                  aria-label={spanish ? "Demo en vivo. Este proyecto aún está en desarrollo." : "Live demo. This project is still in development."}
+                  data-tooltip={spanish ? "Este proyecto aún está en desarrollo" : "This project is still in development"}
+                >
                   <IconExternalLink size={18} />
-                  Live Demo
+                  {spanish ? "Demo en vivo" : "Live Demo"}
                 </a>
-                <a href={project.codeUrl} aria-label='Source code'>
+                <a
+                  href={project.codeUrl}
+                  onClick={(event) => event.preventDefault()}
+                  aria-label={spanish ? "Código. Este proyecto aún está en desarrollo." : "Code. This project is still in development."}
+                  data-tooltip={spanish ? "Este proyecto aún está en desarrollo" : "This project is still in development"}
+                >
                   <IconBrandGithub size={18} />
-                  Code
+                  {spanish ? "Código" : "Code"}
                 </a>
               </div>
             </div>

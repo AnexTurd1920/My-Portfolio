@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./stylesheets/App.css";
+import { LanguageContext, type Language } from "./LanguageContext";
 
 import Navbar from "./components/Navbar.tsx";
 import Home from "./components/Home.tsx";
@@ -12,6 +13,7 @@ import Footer from "./components/Footer.tsx";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [language, setLanguage] = useState<Language>("en");
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -25,7 +27,8 @@ function App() {
         });
       },
       {
-        threshold: 0.5,
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0,
       },
     );
 
@@ -34,18 +37,24 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
-  return (
-    <>
-      <Navbar activeSection={activeSection} />
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
-      <Home />
-      <Services />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </>
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage }}>
+      <>
+        <Navbar activeSection={activeSection} />
+
+        <Home />
+        <Services />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </>
+    </LanguageContext.Provider>
   );
 }
 
